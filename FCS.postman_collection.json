@@ -1,0 +1,58 @@
+{
+	"info": {
+		"_postman_id": "13b7d43e-d7a0-4076-85be-aa458c21c75c",
+		"name": "FCS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:5000/api/pas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/pas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"pas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/api/pas",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"patient_name\" : \"sneha joshi\",\r\n    \"last_menstrual_date\":\"07/21/2023\",\r\n    \"gestational_age_today\":\"5\",\r\n    \"GS_location\":\"upper\",\r\n    \"scar_thickness\":3,\r\n    \"gs_length_from_os\":3,\r\n    \"upper_border\":4,\r\n    \"decidua_situated\":\"Towards fundic side\",\r\n    \"score\":0}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/pas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"pas"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
