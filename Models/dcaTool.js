@@ -1,0 +1,53 @@
+const mongoose = require('mongoose')
+const dcaSchema = new mongoose.Schema({
+    crl_date:{
+        type:Date,
+        required:true
+    },
+    crl_in_mm:{
+        type:Number,
+        required:true
+    },
+    ga_days:{
+        type:Number,
+        required:true
+    },
+    eleven_to_thirteen_weeks_cl:{
+        type:Number,
+        required:true
+    },
+    cl_in_mm_1:{
+        type:Number,
+        required:true
+    },
+    twenty_to_twentytwo_weeks_cl:{
+        type:Number,
+        required:true
+    },
+    cl_in_mm_2:{
+        type:Number,
+        required:true
+    },
+    calculate:{
+        type:Number,
+        required:true
+    },
+    delivery_date:{
+        type:Date,
+        required:true
+    },
+    ga_at_delivery:{
+        type:Number,
+        required:true
+    },
+    intervention:{
+        type:String,
+        required:true
+    },
+    score:{
+        type:Number,
+        required:true
+    }
+})
+
+module.exports = mongoose.model('dcatool',dcaSchema)
