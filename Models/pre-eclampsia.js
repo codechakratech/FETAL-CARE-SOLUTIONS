@@ -9,7 +9,7 @@ const pre_eclampsiaSchema = new mongoose.Schema({
         required:true
     },
     gest_age:{
-        type:Number,
+        type:String,
         required:true
     },
     birth_date:{
@@ -17,7 +17,7 @@ const pre_eclampsiaSchema = new mongoose.Schema({
         required:true
     },
     age_at_delivery:{
-        type:Number,
+        type:String,
         required:true
     },
     previous_ho_pe:{
@@ -25,27 +25,27 @@ const pre_eclampsiaSchema = new mongoose.Schema({
         required:true
     },
     systolic_blood_pressure:{
-        type:Number,
+        type:String,
         required:true
     },
     diastolic_bp_d:{
-        type:Number,
+        type:String,
         required:true
     },
     mean__arterial_blood_pressure:{
-        type:Number,
+        type:String,
         required:true
     },
     right_uterine_pi_a:{
-        type:Number,
+        type:String,
         required:true
     },
     left_uterine_pi_b:{
-        type:Number,
+        type:String,
         required:true
     },
     mean_pi:{
-        type:Number,
+        type:String,
         required:true
     },
     score:{
