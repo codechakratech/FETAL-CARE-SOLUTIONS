@@ -24,7 +24,7 @@ const userSchema = new mongoose.Schema({
         type:Number,
         required:true
     },
-    clinicName:{
+    clinic_council_no:{
         type:String,
         required:true
     }
