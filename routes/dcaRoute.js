@@ -5,11 +5,11 @@ const route = require('express').Router()
 
 route.get('/',getDca)
 
-route.post('/',auth,postDca)
+route.post('/',postDca)
 
-route.put('/:id',auth,putDca)
+route.put('/:id',putDca)
 
-route.delete('/:id',auth,deleteDca)
+route.delete('/:id',deleteDca)
 
 
 module.exports = route
