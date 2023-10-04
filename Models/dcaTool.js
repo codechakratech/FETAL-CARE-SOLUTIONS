@@ -31,10 +31,6 @@ const dcaSchema = new mongoose.Schema({
         type:String,
        
     },
-    calculate:{
-        type:Number,
-      
-    },
     delivery_date:{
         type:Date,
        
