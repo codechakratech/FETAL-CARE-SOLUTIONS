@@ -1,5 +1,8 @@
 const mongoose = require('mongoose')
 const dcaSchema = new mongoose.Schema({
+    name:{
+        type:String
+    },
     crl_date:{
         type:Date,
         
