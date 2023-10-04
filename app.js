@@ -5,7 +5,7 @@ const dcaRoute = require('./routes/dcaRoute')
 const pasRoute = require('./routes/pasRoute')
 const pre_ecampsiaRoute = require('./routes/pre-eclampsiaRoute')
 const userRoute = require('./routes/userRoute')
-require('dotenv').config();
+require('dotenv/config')
 
 const app = express()
 
