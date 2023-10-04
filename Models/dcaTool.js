@@ -8,27 +8,27 @@ const dcaSchema = new mongoose.Schema({
         
     },
     crl_in_mm:{
-        type:Number,
+        type:String,
        
     },
     ga_days:{
-        type:Number,
+        type:String,
        
     },
     eleven_to_thirteen_weeks_cl:{
-        type:Number,
+        type:Date,
         
     },
     cl_in_mm_1:{
-        type:Number,
+        type:String,
       
     },
     twenty_to_twentytwo_weeks_cl:{
-        type:Number,
+        type:Date,
        
     },
     cl_in_mm_2:{
-        type:Number,
+        type:String,
        
     },
     calculate:{
@@ -40,7 +40,7 @@ const dcaSchema = new mongoose.Schema({
        
     },
     ga_at_delivery:{
-        type:Number,
+        type:String,
        
     },
     intervention:{
@@ -48,7 +48,7 @@ const dcaSchema = new mongoose.Schema({
      
     },
     score:{
-        type:Number,
+        type:String,
        
     }
 })
