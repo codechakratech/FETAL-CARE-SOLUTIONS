@@ -1,15 +1,17 @@
-const {getPas,postPas,putPas,deletePas} = require('../controller/pasController')
+const {getPas,postPas,putPas,deletePas, getPasOne} = require('../controller/pasController')
 const auth = require('../middelWear/auth')
 
 const route = require('express').Router()
 
 route.get('/',getPas)
 
-route.post('/',auth, postPas)
+route.post('/', postPas)
 
-route.put('/:id',auth, putPas)
+route.put('/:id', putPas)
 
-route.delete('/:id',auth, deletePas)
+route.get('/:id', getPasOne)
+
+route.delete('/:id', deletePas)
 
 module.exports = route
 

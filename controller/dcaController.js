@@ -9,6 +9,15 @@ exports.getDca = async (req,res)=>{
     }
 }
 
+exports.getDcaOne = async (req,res)=>{
+    try {
+        const data = await Dca.findById(req.params.id)
+        return res.json({errors:false,data:data})
+    } catch (error) {
+        return res.status(400).json({errors:true,message:error.message})
+    }
+}
+
 exports.postDca = async (req,res)=>{
     try {
         const data = await Dca.create(req.body)

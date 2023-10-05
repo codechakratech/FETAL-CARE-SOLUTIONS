@@ -9,6 +9,15 @@ exports.getPre = async (req,res)=>{
     }
 }
 
+exports.getPreOne = async (req,res)=>{
+    try {
+        const data = await Pre.findById(req.params.id)
+        return res.json({errors:false,data:data})
+    } catch (error) {
+        return res.status(400).json({errors:true,message:error.message})
+    }
+}
+
 exports.postPre = async (req,res)=>{
     try {
         const data = await Pre.create(req.body)

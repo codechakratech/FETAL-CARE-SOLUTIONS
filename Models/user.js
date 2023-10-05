@@ -31,6 +31,10 @@ const userSchema = new mongoose.Schema({
     clinic_council_no:{
         type:String,
         required:true
+    },
+    isAdmin:{
+        type:Boolean,
+        default:false
     }
 })
 
