@@ -36,6 +36,10 @@ const pasSchema = new mongoose.Schema({
     score:{
         type:Number,
         required:true
+    },
+    user:{
+        type:mongoose.Schema.ObjectId,
+        ref:'user1'
     }
 })
 

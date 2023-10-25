@@ -2,7 +2,7 @@ const Dca = require('../Models/dcaTool')
 
 exports.getDca = async (req,res)=>{
     try {
-        const data = await Dca.find()
+        const data = await Dca.find().populate('user')
         return res.json({errors:false,data:data})
     } catch (error) {
         return res.status(400).json({errors:true,message:error.message})

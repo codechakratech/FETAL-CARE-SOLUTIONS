@@ -46,6 +46,10 @@ const dcaSchema = new mongoose.Schema({
     score:{
         type:String,
        
+    },
+    user:{
+        type:mongoose.Schema.ObjectId,
+        ref:'user1'
     }
 })
 

@@ -2,7 +2,7 @@ const Pre = require('../Models/pre-eclampsia')
 
 exports.getPre = async (req,res)=>{
     try {
-        const data = await Pre.find()
+        const data = await Pre.find().populate('user')
         return res.json({errors:false,data:data})
     } catch (error) {
         return res.status(400).json({errors:true,message:error.message})

@@ -2,7 +2,7 @@ const Pas = require('../Models/Pas')
 
 exports.getPas = async (req,res)=>{
     try {
-        const data = await Pas.find()
+        const data = await Pas.find().populate('user')
         return res.json({errors:false,data:data})
     } catch (error) {
         return res.json({errors:true,message:error.message})
