@@ -2,40 +2,40 @@ const mongoose = require('mongoose');
 
 const pasSchema = new mongoose.Schema({
     patient_name:{
-        type:String,
-        required:true
+        type:String
+    },
+    risk_factor:{
+        type:String
     },
     last_menstrual_date:{
-        type:Date,
-        required:true
+        type:Date
     },
     gestational_age_today:{
-        type:String,
-        required:true
+        type:String
     },
     GS_location:{
-        type:String,
-        required:true
+        type:String
     },
     scar_thickness:{
-        type:Number,
-        required:true
+        type:Number
     },
     Gestational_sac_length:{
-        type:Number,
-        required:true
+        type:Number
     },
     length_of_sca_below_cs_scar:{
-        type:Number,
-        required:true
+        type:Number
     },
     decidua_situated:{
-        type:String,
-        required:true
+        type:String
     },
     score:{
-        type:Number,
-        required:true
+        type:Number
+    },
+    maternal_outcome:{
+        type:String
+    },
+    pregnancy_outcome:{
+        type:String
     },
     user:{
         type:mongoose.Schema.ObjectId,
