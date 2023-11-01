@@ -2,55 +2,42 @@ const mongoose = require('mongoose')
 const pre_eclampsiaSchema = new mongoose.Schema({
     name:{
         type:String,
-        required:true
     },
     lmp:{
         type:String,
-        required:true
     },
     gest_age:{
         type:String,
-        required:true
     },
     birth_date:{
         type:Date,
-        required:true
     },
     age_at_delivery:{
         type:String,
-        required:true
     },
     previous_ho_pe:{
         type:String,
-        required:true
     },
     systolic_blood_pressure:{
         type:String,
-        required:true
     },
     diastolic_bp_d:{
         type:String,
-        required:true
     },
     mean__arterial_blood_pressure:{
         type:String,
-        required:true
     },
     right_uterine_pi_a:{
         type:String,
-        required:true
     },
     left_uterine_pi_b:{
         type:String,
-        required:true
     },
     mean_pi:{
         type:String,
-        required:true
     },
     score:{
         type:Number,
-        required:true
     },
     user:{
         type:mongoose.Schema.ObjectId,
