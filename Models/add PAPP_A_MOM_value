@@ -36,6 +36,9 @@ const pre_eclampsiaSchema = new mongoose.Schema({
     mean_pi:{
         type:String,
     },
+    PAPP_A_MOM_value:{
+         type:String,
+    },
     score:{
         type:Number,
     },
