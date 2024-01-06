@@ -3,8 +3,10 @@ const mongoose = require('mongoose')
 const cors = require("cors");
 const dcaRoute = require('./routes/dcaRoute')
 const pasRoute = require('./routes/pasRoute')
+const bioadaptiveRoute = require('./routes/bioadaptiveRoute')
 const pre_ecampsiaRoute = require('./routes/pre-eclampsiaRoute')
-const userRoute = require('./routes/userRoute')
+const userRoute = require('./routes/userRoute');
+
 require('dotenv/config')
 
 const app = express()
@@ -19,6 +21,7 @@ app.get("/", function (req, res) {
 app.use('/api/pas',pasRoute)
 app.use('/api/dca',dcaRoute)
 app.use('/api/pre',pre_ecampsiaRoute)
+app.use('/api/bio',bioadaptiveRoute)
 app.use('/api/user',userRoute)
 
 
