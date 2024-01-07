@@ -28,6 +28,7 @@ const bioadaptiveSchema = new mongoose.Schema({
     mca_pi: { type: String },
     umb_pi: { type: String },
     cpr_ratio: { type: String },
+        cctg: { type: String },
     score: {
         type: Number
     },
