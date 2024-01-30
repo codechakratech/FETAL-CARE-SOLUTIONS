@@ -32,7 +32,9 @@ const bioadaptiveSchema = new mongoose.Schema({
     score: {
         type: Number
     },
-
+    remark:{
+        type:String
+    },
     user: {
         type: mongoose.Schema.ObjectId,
         ref: 'user1'

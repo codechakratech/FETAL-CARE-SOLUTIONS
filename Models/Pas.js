@@ -37,6 +37,9 @@ const pasSchema = new mongoose.Schema({
     pregnancy_outcome:{
         type:String
     },
+    remark:{
+        type:String
+    },
     user:{
         type:mongoose.Schema.ObjectId,
         ref:'user1'

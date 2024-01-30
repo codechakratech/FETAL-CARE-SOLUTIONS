@@ -4,36 +4,28 @@ const dcaSchema = new mongoose.Schema({
         type:String
     },
     crl_date:{
-        type:Date,
-        
+        type:Date,    
     },
     crl_in_mm:{
-        type:String,
-       
+        type:String, 
     },
     ga_days:{
         type:String,
-       
     },
     eleven_to_thirteen_weeks_cl:{
         type:Date,
-        
     },
     cl_in_mm_1:{
         type:String,
-      
     },
     twenty_to_twentytwo_weeks_cl:{
         type:Date,
-       
     },
     cl_in_mm_2:{
         type:String,
-       
     },
     delivery_date:{
         type:Date,
-       
     },
     ga_at_delivery:{
         type:String,
@@ -46,6 +38,9 @@ const dcaSchema = new mongoose.Schema({
     score:{
         type:String,
        
+    },
+    remark:{
+        type:String
     },
     user:{
         type:mongoose.Schema.ObjectId,
