@@ -45,6 +45,11 @@ const pre_eclampsiaSchema = new mongoose.Schema({
     remark:{
         type:String
     },
+    age_score:Number,
+    ho_pe_score:Number,
+    mabp_score:Number,
+    mpi_score:Number,
+    pam_score:Number,
     user:{
         type:mongoose.Schema.ObjectId,
         ref:'user1'

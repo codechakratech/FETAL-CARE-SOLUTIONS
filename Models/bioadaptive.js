@@ -35,6 +35,10 @@ const bioadaptiveSchema = new mongoose.Schema({
     remark:{
         type:String
     },
+    weight_score:Number,
+    amniotic_fluid_index_score:Number,
+    cpr_ratio_score:Number,
+    cctg_score:Number,
     user: {
         type: mongoose.Schema.ObjectId,
         ref: 'user1'

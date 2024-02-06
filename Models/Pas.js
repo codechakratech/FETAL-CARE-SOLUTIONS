@@ -40,6 +40,9 @@ const pasSchema = new mongoose.Schema({
     remark:{
         type:String
     },
+    scar_thikness_score:Number,
+    sac_below_scar_score:Number,
+    decidua_situated_score:Number,
     user:{
         type:mongoose.Schema.ObjectId,
         ref:'user1'
