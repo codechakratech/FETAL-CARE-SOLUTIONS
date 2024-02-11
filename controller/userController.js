@@ -47,7 +47,7 @@ exports.login = async (req,res)=>{
 exports.putUserPassword = async (req,res)=>{
     try {
         const userExists = await User.findOne({email:req.body.email})
-        if(!userExists) return res.status(400).json({errors:true,message:'email or password invalid'})
+        if(!userExists) return res.status(400).json({errors:true,message:'email is invalid'})
         
          const sault = await bcrypt.genSalt()
         req.body.password = await bcrypt.hash(req.body.password,sault)
