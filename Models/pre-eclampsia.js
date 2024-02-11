@@ -50,6 +50,10 @@ const pre_eclampsiaSchema = new mongoose.Schema({
     mabp_score:Number,
     mpi_score:Number,
     pam_score:Number,
+       date_of_exam:{
+        type:Date,
+        default:Date.now()
+    },
     user:{
         type:mongoose.Schema.ObjectId,
         ref:'user1'
