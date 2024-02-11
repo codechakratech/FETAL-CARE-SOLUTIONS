@@ -42,6 +42,10 @@ const dcaSchema = new mongoose.Schema({
     remark:{
         type:String
     },
+       date_of_exam:{
+        type:Date,
+        default:Date.now()
+    },
     user:{
         type:mongoose.Schema.ObjectId,
         ref:'user1'
