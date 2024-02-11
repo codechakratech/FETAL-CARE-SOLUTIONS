@@ -43,6 +43,10 @@ const pasSchema = new mongoose.Schema({
     scar_thikness_score:Number,
     sac_below_scar_score:Number,
     decidua_situated_score:Number,
+    date_of_exam:{
+        type:Date,
+        default:Date.now()
+    },
     user:{
         type:mongoose.Schema.ObjectId,
         ref:'user1'
