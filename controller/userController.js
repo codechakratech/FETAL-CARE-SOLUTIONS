@@ -52,7 +52,7 @@ exports.putUserPassword = async (req,res)=>{
          const sault = await bcrypt.genSalt()
         req.body.password = await bcrypt.hash(req.body.password,sault)
         
-        const data = await User.findByIdAndUpdate(req.params.id,req.body,{new:true})
+        const data = await User.findByIdAndUpdate(userExists._id,req.body,{new:true})
         return res.json({errors:false,data:data})
     } catch (error) {
         return res.status(400).json({errors:true,message:error.message})                
