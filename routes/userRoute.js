@@ -10,7 +10,7 @@ route.get('/',getUser)
 
 route.put('/:id',putUser)
 
-route.post('/forgot,putUserPassword)
+route.post('/forgot',putUserPassword)
 
 route.delete('/:id',deleteUser)
 
